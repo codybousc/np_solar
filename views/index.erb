@@ -1,0 +1,22 @@
+<div class="form-group">
+<form action="/" method="get">
+  <label for="name"> Enter City</label>
+    <input type="text" name="city_name" id="city_name" class="form-control">
+
+    <label for="zip_code"> Enter Zip</label>
+      <input type="text" name="zip_code" id="zip_code" class="form-control">
+
+
+    <button type="submit"></button>
+</form>
+</div>
+
+
+<%= @city.each do |city| %>
+
+<ul>
+
+  <li><%=city.zip_code %> </li>
+  <% end %>
+  
+</ul>
